@@ -1,0 +1,28 @@
+{
+  "name": "instantiate",
+  "description": "Instantiate a Javascript Object from an array of arguments or from arguments",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=2.0"
+  },
+  "dependencies": {
+  },
+  "scripts" : {
+    "test" : "tap ./tests/*.js"
+  },
+  "devDependencies" : {
+    "tap" : "~0.4.0"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/miketheprogrammer/instantiate.git"
+  },
+  "author": "Michael Hernandez <michael.hernandez1988@gmail.com>",
+  "keywords": ["Objects", "instantiation", "arguments", "args", ".call", ".apply"],
+  "main": "./index.js",
+  "maintainers": [{
+    "name": "Michael Hernandez",
+    "email": "michael.hernandez1988@gmail.com",
+    "web": "http://miketheprogrammer.com"
+  }]
+}
