@@ -3,7 +3,7 @@
   "description": "Instantiate a Javascript Object from an array of arguments or from arguments",
   "version": "0.1.0",
   "engines": {
-    "node": ">=2.0"
+    "node": ">=8.0"
   },
   "dependencies": {
   },
