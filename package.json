@@ -1,7 +1,7 @@
 {
   "name": "instantiate",
   "description": "Instantiate a Javascript Object from an array of arguments or from arguments",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "node": ">=8.0"
   },
