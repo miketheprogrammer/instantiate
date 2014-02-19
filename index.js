@@ -8,18 +8,15 @@ exports.fromArguments = function(constructor) {
 }
 
 exports.new = function(constructor) {
-    if ( arguments[2] == undefined ){
+    if ( arguments[1].length !== undefined ) {
         return exports.fromArray(constructor, arguments[1]);
     }
 
     delete arguments[0];
-
     var args = [];
-    var i = 1;
 
-    while( arguments[i] != undefined ) {
+    for (var i = 1; i < arguments.length; i += 1) {
         args.push(arguments[i]);
-        i++;
     }
     return exports.fromArguments.apply(null, [constructor].concat(args));
 }

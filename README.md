@@ -3,7 +3,11 @@ instantiate
 
 Instantiate a Javascript Object from an array of arguments
 
+[![browser support](https://ci.testling.com/miketheprogrammer/instantiate.png)](https://ci.testling.com/miketheprogrammer/instantiate)
+
+
 [![build status](https://secure.travis-ci.org/miketheprogrammer/instantiate.png)](http://travis-ci.org/miketheprogrammer/instantiate)
+
 
 
 Installation

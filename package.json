@@ -1,28 +1,49 @@
 {
   "name": "instantiate",
   "description": "Instantiate a Javascript Object from an array of arguments or from arguments",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "engines": {
     "node": ">=8.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "scripts": {
+    "test": "node ./tests/*.js"
   },
-  "scripts" : {
-    "test" : "tap ./tests/*.js"
+  "devDependencies": {
+    "tape": "~2.4.2"
   },
-  "devDependencies" : {
-    "tap" : "~0.4.0"
+  "testling": {
+    "files": "tests/test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "http://github.com/miketheprogrammer/instantiate.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/miketheprogrammer/instantiate.git"
   },
   "author": "Michael Hernandez <michael.hernandez1988@gmail.com>",
-  "keywords": ["Objects", "instantiation", "arguments", "args", ".call", ".apply"],
+  "keywords": [
+    "Objects",
+    "instantiation",
+    "arguments",
+    "args",
+    ".call",
+    ".apply"
+  ],
   "main": "./index.js",
-  "maintainers": [{
-    "name": "Michael Hernandez",
-    "email": "michael.hernandez1988@gmail.com",
-    "web": "http://miketheprogrammer.com"
-  }]
+  "maintainers": [
+    {
+      "name": "Michael Hernandez",
+      "email": "michael.hernandez1988@gmail.com",
+      "web": "http://miketheprogrammer.com"
+    }
+  ]
 }
