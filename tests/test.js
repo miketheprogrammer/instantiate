@@ -14,16 +14,17 @@ var obj2 = function (a,b,c,d) {
     this.d = d;
 }
 test('instances of objects Should be returned', function(t) {
-    t.plan(4);
-    t.ok(instantiate.fromArray(obj, [1,2,3]) instanceof obj)
-    t.ok(instantiate.fromArguments(obj,1,2,3) instanceof obj)
-    t.ok(instantiate.new(obj, [1,2,3]) instanceof obj)
-    t.ok(instantiate.new(obj,1,2,3) instanceof obj)
+    //t.plan(4);
+    t.equals(instantiate.fromArray(obj, [1,2,3]) instanceof obj, true)
+    t.equals(instantiate.fromArguments(obj,1,2,3) instanceof obj, true)
+    t.equals(instantiate.new(obj, [1,2,3]) instanceof obj, true)
+    t.equals(instantiate.new(obj,1,2,3) instanceof obj, true)
     
+    t.end();
 });
 
 test('instances have proper values', function(t) {
-    t.plan(12);
+    //t.plan(12);
     var instances = [
         instantiate.fromArray(obj, [1,2,3]),
         instantiate.fromArguments(obj, 1, 2, 3),
@@ -37,11 +38,12 @@ test('instances have proper values', function(t) {
         t.same(ins.b, 2);
         t.same(ins.c, 3);
     }
+    t.end();
 });
 
 
 test('Literal undefined arguments should not throw errors', function (t) {
-    t.plan(16);
+    //t.plan(16);
     var instances = [
         instantiate.fromArray(obj2, [1,undefined,undefined, 4]),
         instantiate.fromArguments(obj2, 1, undefined,undefined, 4),
@@ -55,5 +57,5 @@ test('Literal undefined arguments should not throw errors', function (t) {
         t.equals(ins.c, undefined);
         t.same(ins.d, 4);
     }
-
+    t.end();
 })
